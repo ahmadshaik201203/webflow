@@ -1,12 +1,54 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import GradientSpheres from "../components/GradientSpheres";
 import { Alien } from "../components/models/Alien";
 import TitleHeader from "../components/TitleHeader";
 import { bentoSocialLinks } from "../constants";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const About = () => {
+  useGSAP(() => {
+    // Animate bento cards with stagger on scroll
+    gsap.fromTo(
+      ".about-card",
+      { y: 60, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top 75%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+    // Animate alien canvas card separately
+    gsap.fromTo(
+      ".about-alien-card",
+      { scale: 0.85, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1,
+        ease: "back.out(1.4)",
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top 65%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }, []);
+
   return (
     <section id="about" className="flex-center relative md:p-0 px-5">
       <GradientSpheres
@@ -22,7 +64,7 @@ const About = () => {
         />
         <div className="md:mt-20 mt-10">
           <div className="grid grid-cols-12 md:grid-rows-12 gap-5">
-            <div className="md:col-span-7 col-span-12 row-span-5">
+            <div className="md:col-span-7 col-span-12 row-span-5 about-card opacity-0">
               <div className="bg-black-300 rounded-2xl p-7 w-full h-full">
                 <div>
                   <img
@@ -47,7 +89,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-5 col-span-12 row-span-5">
+            <div className="md:col-span-5 col-span-12 row-span-5 about-alien-card opacity-0">
               <div className="bg-[#C8D751] hover:cursor-grab rounded-2xl w-full md:h-full h-60">
                 <div className="w-full h-full">
                   <Canvas>
@@ -62,11 +104,11 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-6 col-span-12 row-span-3">
+            <div className="md:col-span-6 col-span-12 row-span-3 about-card opacity-0">
               <div className="bg-black-300 rounded-2xl p-7 w-full h-full">
                 <div className="flex flex-col h-full justify-center gap-2">
                   <h1 className="gradient-title md:text-3xl text-2xl font-medium">
-                    Web Design & Dev
+                    Web Design &amp; Dev
                   </h1>
                   <p className="md:text-2xl max-w-96">
                     Cleanly Designed, Conversion-focused, and build for easy
@@ -75,7 +117,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-6 col-span-12 row-span-3">
+            <div className="md:col-span-6 col-span-12 row-span-3 about-card opacity-0">
               <div className="bg-black-300 rounded-2xl p-7 w-full h-full">
                 <div className="flex flex-col h-full justify-center gap-2">
                   <h1 className="gradient-title md:text-3xl text-2xl font-medium">
@@ -87,7 +129,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-4 col-span-12 row-span-4">
+            <div className="md:col-span-4 col-span-12 row-span-4 about-card opacity-0">
               <div className="bg-black-300 rounded-2xl p-7 w-full h-full">
                 <div className="flex flex-col justify-between h-full">
                   <h1 className="gradient-title md:text-5xl text-3xl font-bold">
@@ -103,7 +145,7 @@ const About = () => {
               </div>
             </div>
             {bentoSocialLinks.map((item, index) => (
-              <div key={index} className="md:col-span-4 col-span-12 row-span-2">
+              <div key={index} className="md:col-span-4 col-span-12 row-span-2 about-card opacity-0">
                 <a href={item.href} target="_blank" rel="noopener noreferrer" className="block bg-black-300 rounded-2xl p-7 w-full h-full group cursor-pointer">
                   <div className="flex justify-between items-center h-full">
                     <div className="flex items-center md:gap-5">

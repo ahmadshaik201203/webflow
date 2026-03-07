@@ -56,13 +56,13 @@ const ContactForm = () => {
       await emailjs.send(serviceID, templateID, payload, {
         publicKey: userID,
       });
+      reset(initialValues);
+      alert("Message sent successfully!");
     } catch (error) {
       console.log("FAILED...", error);
       alert("Failed to send message, please try again.");
     } finally {
       setLoading(false);
-      reset(initialValues);
-      alert("Message sent successfully!");
     }
   };
 
@@ -83,7 +83,7 @@ const ContactForm = () => {
             {...register("name")}
             type="text"
             id="name"
-            placeholder="Tommy"
+            placeholder="Your Name"
             className="w-full px-4 py-4 font-light md:text-base text-sm placeholder:text-[#fafafa50] bg-black-300 rounded-md"
           />
           {errors.name && (

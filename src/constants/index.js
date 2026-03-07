@@ -21,7 +21,7 @@ const bentoSocialLinks = [
   {
     name: "GitHub",
     href: "https://github.com/ahmadshaik201203",
-    icon: "/images/fb.svg",
+    icon: "/images/github.svg",
   },
   {
     name: "Email",
@@ -125,7 +125,7 @@ const footerIconsList = [
   {
     name: "GitHub",
     href: "https://github.com/ahmadshaik201203",
-    icon: "/images/b-fb.svg",
+    icon: "/images/github.svg",
   },
   {
     name: "Email",

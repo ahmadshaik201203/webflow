@@ -7,12 +7,12 @@ const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % (slides.length - 1));
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
   };
 
   const prevSlide = () => {
     setCurrentSlide(
-      (prevSlide) => (prevSlide - 1 + (slides.length - 1)) % (slides.length - 1)
+      (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
     );
   };
 
