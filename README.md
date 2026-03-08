@@ -70,13 +70,13 @@ Ready to get this project up and running on your local machine? Follow these sim
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/GourangaDasSamrat/My-Personal-Portfolio.git
+   git clone https://https://github.com/ahmadshaik201203/webflow.git
    ```
 
 2. **Navigate into the project directory:**
 
    ```bash
-   cd My-Personal-Portfolio
+   cd webflow
    ```
 
 3. **Install dependencies:**
@@ -129,7 +129,7 @@ Ready to get this project up and running on your local machine? Follow these sim
 
 <div align="center">
 
-<a href="https://pagespeed.web.dev/analysis/https-gourangadas-netlify-app/xsjbikyooz?form_factor=mobile">
+<a href="https://pagespeed.web.dev/analysis/https-webflow-mocha.vercel.app/xsjbikyooz?form_factor=mobile">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Performance-98-success?style=for-the-badge&logo=lighthouse&logoColor=white&color=00C853">
     <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Performance-98-success?style=for-the-badge&logo=lighthouse&logoColor=white&color=00C853">
@@ -157,12 +157,12 @@ Ready to get this project up and running on your local machine? Follow these sim
 <table>
   <tr>
     <td align="center">
-      <a href="https://pagespeed.web.dev/analysis/https-gourangadas-netlify-app/xsjbikyooz?form_factor=desktop">
+      <a href="https://pagespeed.web.dev/analysis/https-webflow-mocha.vercel.app/xsjbikyooz?form_factor=desktop">
         <img src="https://img.shields.io/badge/Desktop-98%2F100-success?style=for-the-badge&logo=googlechrome&logoColor=white&color=00C853" alt="Desktop Score" />
       </a>
     </td>
     <td align="center">
-      <a href="https://pagespeed.web.dev/analysis/https-gourangadas-netlify-app/xsjbikyooz?form_factor=mobile">
+      <a href="https://pagespeed.web.dev/analysis/https-webflow-mocha.vercel.app/xsjbikyooz?form_factor=mobile">
         <img src="https://img.shields.io/badge/Mobile-95%2F100-success?style=for-the-badge&logo=android&logoColor=white&color=00C853" alt="Mobile Score" />
       </a>
     </td>
