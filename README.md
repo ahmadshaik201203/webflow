@@ -18,7 +18,7 @@
 Welcome to my innovative portfolio—where creativity meets technology. Built with React, Three.js, and Vite, this showcase features stunning 3D models, fluid animations, and a fully responsive design that creates an immersive viewing experience.
 </p>
 
-[View Live Demo](https://gouranga-das.netlify.app) • [Watch Demo Video](https://youtu.be/d9xWeuUohDo) • [Report Bug](https://github.com/GourangaDasSamrat/My-Personal-Portfolio/issues) • [Request Feature](https://github.com/GourangaDasSamrat/My-Personal-Portfolio/issues)
+[View Live Demo](https://webflow-mocha.vercel.app) • [Watch Demo Video](https://youtu.be/d9xWeuUohDo) • [Report Bug](https://github.com/ahmadshaik201203/webflow)) • [Request Feature](https://github.com/ahmadshaik201203/webflow)
 
 </div>
 
@@ -784,12 +784,12 @@ This project is open source and available under the [MIT License](LICENSE). You 
 ## 👤 Author & Contact
 
 <p align="center">
-  <img src="https://i.postimg.cc/Bnwyx7kh/485760954-644674311798231-1067913994704069438-n.jpg" alt="Gouranga Das Samrat" width="110" style="border-radius:50%;margin-bottom:10px;box-shadow:0 2px 8px #ccc;"/>
+  <img src="/attachments/4FY7gdv3UnM5DoRWXzsmv.jpeg" alt="Ahmad Shaik" width="110" style="border-radius:50%;margin-bottom:10px;box-shadow:0 2px 8px #ccc;"/>
 </p>
 
 <p align="center">
   <b>Gouranga Das Samrat</b><br>
-  <i>Frontend Developer | JavaScript & React Expert | Open Source Enthusiast</i>
+  <i>Frontend Developer | AI fullstack developer | Open Source webflow</i>
 </p>
 <p align="center">
   <a href="https://www.facebook.com/gourangadassamrat" title="Facebook">
