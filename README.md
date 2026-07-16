@@ -774,7 +774,7 @@ This project is open source and available under the [MIT License](LICENSE). You 
 </p>
 
 <p align="center">
-  <b>Gouranga Das Samrat</b><br>
+  <b>Ahmad Shaik</b><br>
   <i>Frontend Developer | AI fullstack developer | Open Source webflow</i>
 </p>
 <p align="center">
